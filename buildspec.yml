@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - bash ./scripts/pre_build.sh
+  build:
+    commands:
+      - bash ./scripts/build.sh
+  post_build:
+    commands:
+      - bash ./scripts/post_build.sh
+artifacts:
+  files:
+    - '**/*'
